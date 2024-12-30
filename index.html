@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid and flex practice</title>
+    <style>
+        :root {
+            --box-color: white;
+            --link-color: #8EB486;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #D8C4B6;
+            overflow-x: hidden;
+        }
+
+        /* .right{
+    display: flex;
+} */
+        ul {
+            display: flex;
+            list-style-type: none;
+            height: 70px;
+            width: 100%;
+            margin-top: 0px;
+            background-color: var(--box-color);
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        ul li {
+            padding: 10px;
+            padding-top: 15px;
+            padding-right: 40px;
+            text-decoration: none;
+
+        }
+
+        ul li a:hover {
+            background-color: black;
+            color: white;
+            /* list-style: none; */
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            height: 180px;
+            width: 250px;
+            background-color: var(--box-color);
+            margin: 2rem;
+            border-radius: 10px;
+            /* text-shadow: 12px; */
+            box-shadow: 2px 2px 5px 1px;
+
+        }
+
+        .box h3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box a {
+            display: flex;
+            justify-content: center;
+            margin-top: auto;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            height: 10px;
+            width: 130px;
+            padding-bottom: 11px;
+            padding-left: 10px;
+            margin-left: 55px;
+            color: white;
+            background-color: var(--link-color);
+            padding-top: 3px;
+            text-decoration: none;
+            border-radius: 12px;    
+
+        }
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="right">
+                <ul>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">For business</a></li>
+                    <li><a href="">Resources</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Our company</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <a href="Paste_link_here">Download 64-bit</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
